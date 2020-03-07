@@ -224,7 +224,12 @@ STATSD_HOST ``str``
 
 STATSD_PORT ``int``
   Порт сервера statsd для выгрузки данных статистики и мониторинга работы сервера Smarty.
+  
+EXTERNAL_API_MEGOGO_DEFAULT ``str``
+  Имя модуля интеграции с Megogo. 
 
+EXTERNAL_API_TVZAVR_DEFAULT ``str``
+  Имя модуля интеграции с TVZavr. 
 
 .. _license-settings:
 
