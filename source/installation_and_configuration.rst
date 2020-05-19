@@ -235,10 +235,13 @@ UPLOAD_URL ``str``
   URL папки для загруженного пользователями контента.
   
 MAIN_MENU ``dict``
-  Описывает структуру главного меню админки смарти. Поля:
-  {"role":[{'name': '', 'title': '', 'icon': '', 
+  Описывает структуру главного меню админки смарти. Поля: ::
+  
+        {"role":[{'name': '', 'title': '', 'icon': '', 
             'subitems': [{'name': '', 'title': '', 'url': ''}, ...]
-        }, ...]}, где role - вид клиента (client, dealer, copyright_holder, etc)
+        }, ...]}
+        
+  где role - вид клиента (client, dealer, copyright_holder, etc)
 
 TVMIDDLEWARE_PORTAL_DOMAIN ``str``
   Домен, на котором располагается портал для устройств типа STB и Smart TV. Используется только для вспомогательных
@@ -982,7 +985,7 @@ SMARTY_ADDITIONAL_LANGUAGES ``list``
     Загрузка всех каналов из источника. Если указан данный аргумент то все аргументы кроме ``epg_source_id`` и
     ``epg_source_name`` будут проигнорированы.
 
-Пример команды для повторного импортирования иконок для одного канала:
+Пример команды для повторного импортирования иконок для одного канала: ::
 
     python /usr/share/nginx/html/microimpuls/smarty/manage.py epg_channel_import --epg_source_id=1 --epg_channel_id=100 --reimport_icons --settings=settings.<settings name>
 
